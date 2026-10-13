@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#071d18" />
+  <meta name="description" content="Partner with Flying Grid to host EV charging at your shop, hotel, café, parking area or commercial property in Ujjain, Madhya Pradesh." />
+  <title>Flying Grid | Host an EV Charging Station</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--green:#08b86b;--green2:#087d4d;--ink:#09251f;--muted:#61736d;--pale:#f1f8f4;--white:#fff;--dark:#061b17;--line:#dfeae4;--radius:22px;--max:1180px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;font-family:'DM Sans',sans-serif;color:var(--ink);background:#fff}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}.container{width:min(var(--max),calc(100% - 44px));margin:auto}.eyebrow{font-size:.76rem;text-transform:uppercase;letter-spacing:.17em;font-weight:700;color:var(--green2)}h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:Manrope,sans-serif;letter-spacing:-.045em}h2{font-size:clamp(2rem,4vw,3.25rem);line-height:1.08;margin-bottom:18px}p{line-height:1.7;color:var(--muted)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 20px;border-radius:999px;font-weight:700;font-size:.92rem;transition:.2s ease;border:1px solid transparent}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--green);color:#03271a;box-shadow:0 9px 24px #08b86b2b}.btn-primary:hover{background:#21ce80}.btn-outline{border-color:#ffffff70;color:white;background:#ffffff0d}.arrow{font-size:1.1rem}
+    /* Header */
+    .header{position:sticky;top:0;z-index:50;background:#061b17f2;backdrop-filter:blur(16px);border-bottom:1px solid #ffffff12}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:0;min-width:205px}.brand img{width:190px;height:58px;object-fit:contain;object-position:left center;border-radius:3px}.nav-links{display:flex;align-items:center;gap:30px;color:#dce9e3;font-size:.88rem;font-weight:600}.nav-links a{transition:color .2s}.nav-links a:hover{color:var(--green)}.nav-cta{white-space:nowrap}.menu-btn{display:none;border:1px solid #ffffff30;background:transparent;color:white;border-radius:12px;padding:10px 12px;font-size:1.2rem}
+    /* Hero */
+    .hero{position:relative;min-height:650px;display:flex;align-items:center;color:#fff;overflow:hidden;background:#071c17}.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 55%;opacity:.82}.hero:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(3,20,16,.96) 0%,rgba(3,20,16,.86) 36%,rgba(3,20,16,.26) 70%,rgba(3,20,16,.08) 100%),linear-gradient(0deg,rgba(3,20,16,.35),transparent 50%)}.hero-content{position:relative;z-index:2;padding:92px 0 82px;max-width:690px}.hero .eyebrow{color:#76efb1;display:inline-flex;align-items:center;gap:10px}.hero .eyebrow:before{content:"";width:27px;height:2px;background:var(--green)}h1{font-size:clamp(3rem,6.5vw,5.7rem);line-height:.99;margin:22px 0 24px;max-width:700px;color:#fff}.hero h1 span{color:#40e69a}.hero-copy{font-size:1.12rem;line-height:1.7;color:#d9e8e1;max-width:550px;margin-bottom:30px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.hero-note{display:flex;align-items:center;gap:9px;color:#d2e4dc;font-size:.86rem;margin-top:45px}.pin{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:#08b86b25;color:#6ef0ad}
+    .trust-strip{background:#06251c;color:#d9e8e1;border-top:1px solid #ffffff12}.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);padding:20px 0;gap:20px}.trust-item{display:flex;align-items:center;justify-content:center;gap:12px;font-size:.88rem;font-weight:600}.trust-icon{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:#08b86b1e;color:#50e8a0;font-size:1.15rem}
+    /* Intro */
+    section{padding:100px 0}.intro-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:center}.intro-copy p{max-width:475px}.intro-photo-wrap{position:relative}.intro-photo{width:100%;height:440px;object-fit:cover;border-radius:var(--radius);box-shadow:0 20px 55px #082b1b1c}.photo-note{position:absolute;left:-28px;bottom:26px;max-width:245px;padding:22px;background:var(--dark);color:#fff;border-radius:18px;box-shadow:0 15px 40px #061b1730}.photo-note strong{font-family:Manrope,sans-serif;font-size:1.08rem;line-height:1.35;display:block}.photo-note span{display:block;color:#a8c2b5;font-size:.8rem;margin-top:9px;line-height:1.5}.mini-line{width:36px;height:3px;background:var(--green);margin-bottom:15px;border-radius:3px}
+    /* Location types */
+    .locations{background:var(--pale)}.section-head{max-width:680px;margin-bottom:42px}.section-head p{max-width:570px}.location-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.location-card{background:#fff;border:1px solid #e3eee7;border-radius:18px;padding:26px 23px;transition:transform .25s,box-shadow .25s}.location-card:hover{transform:translateY(-5px);box-shadow:0 16px 36px #0b392012}.location-symbol{height:48px;width:48px;border-radius:15px;background:#e2f8ec;color:#07874e;display:grid;place-items:center;font-size:1.4rem;margin-bottom:23px}.location-card h3{font-size:1.1rem;margin-bottom:8px;letter-spacing:-.025em}.location-card p{font-size:.9rem;line-height:1.6;margin-bottom:0}
+    /* Solutions */
+    .solutions-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:center}.solutions-copy p{max-width:430px}.charger-cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}.charger-card{border:1px solid var(--line);border-radius:22px;overflow:hidden;background:white}.charger-img{height:245px;width:100%;object-fit:cover;background:#f2f7f4}.charger-body{padding:23px}.tag{display:inline-block;padding:7px 10px;background:#e0f8eb;color:#067b48;border-radius:999px;font-size:.68rem;font-weight:800;text-transform:uppercase;letter-spacing:.07em}.charger-body h3{font-size:1.4rem;margin:13px 0 5px}.charger-body p{font-size:.88rem;margin-bottom:15px}.spec{display:flex;align-items:center;gap:8px;font-size:.83rem;color:#34544a;margin-top:8px}.spec b{color:var(--ink)}
+    /* Partnership */
+    .partner{padding:0;background:var(--dark);color:white;overflow:hidden}.partner-inner{display:grid;grid-template-columns:1fr 1fr;min-height:490px;align-items:center;gap:50px}.partner-copy{padding:80px 0}.partner h2{color:white}.partner-copy p{color:#b7cec3;max-width:470px}.partner .eyebrow{color:#67e9a5}.partner-photo{height:490px;width:100%;object-fit:cover;mask-image:linear-gradient(90deg,transparent 0%,#000 18%);opacity:.92}.benefit-list{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:28px 0 32px}.benefit{display:flex;align-items:flex-start;gap:11px;color:#e0eee7;font-size:.9rem;line-height:1.5}.check{flex:0 0 22px;height:22px;display:grid;place-items:center;border-radius:50%;background:#08b86b25;color:#56e9a0;font-weight:800}
+    /* Steps */
+    .steps{background:#fff}.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.step{padding:27px 25px;border-top:1px solid var(--line)}.step-num{font-family:Manrope,sans-serif;font-size:2.5rem;font-weight:800;letter-spacing:-.06em;color:#b7e9ce;margin-bottom:20px}.step h3{font-size:1.2rem;margin-bottom:9px}.step p{font-size:.92rem;margin-bottom:0}
+    /* CTA + contact */
+    .contact{background:#eef8f2}.contact-panel{background:linear-gradient(120deg,#063c2a,#071e18);color:white;border-radius:28px;padding:56px;display:grid;grid-template-columns:1fr .8fr;gap:45px;align-items:center;position:relative;overflow:hidden}.contact-panel:after{content:"FG";position:absolute;right:34%;bottom:-90px;font-family:Manrope,sans-serif;font-size:20rem;font-weight:800;color:#ffffff06;pointer-events:none}.contact-panel h2{color:white;max-width:550px}.contact-panel p{color:#bfd4ca;max-width:520px}.contact-options{position:relative;z-index:1;display:grid;gap:12px}.contact-option{display:flex;align-items:center;gap:14px;background:#ffffff0d;border:1px solid #ffffff1b;border-radius:15px;padding:17px;color:#fff}.contact-option .contact-icon{width:42px;height:42px;display:grid;place-items:center;background:#08b86b27;color:#65e8a3;border-radius:13px;font-size:1.15rem}.contact-option small{display:block;color:#a9c3b7;margin-bottom:3px}.contact-option strong{font-size:.95rem;overflow-wrap:anywhere}.contact-hint{font-size:.8rem!important;margin-top:14px!important}
+    footer{background:#041611;color:#d8e7df;padding:35px 0 22px}.footer-top{display:flex;align-items:center;justify-content:space-between;gap:25px;padding-bottom:28px;border-bottom:1px solid #ffffff19}.footer-brand img{width:185px;height:60px;object-fit:contain;object-position:left center}.footer-nav{display:flex;gap:22px;flex-wrap:wrap;font-size:.83rem;color:#b8ccc2}.footer-nav a:hover{color:var(--green)}.footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:15px;padding-top:20px;color:#82998e;font-size:.78rem}.footer-bottom p{font-size:inherit;margin:0;color:inherit}
+    @media(max-width:950px){.nav-links{gap:17px}.brand{min-width:165px}.brand img{width:165px}.intro-grid,.solutions-grid{gap:40px}.location-grid{grid-template-columns:repeat(2,1fr)}.partner-inner{gap:25px}.contact-panel{padding:42px;grid-template-columns:1fr 1fr}}
+    @media(max-width:760px){.container{width:min(var(--max),calc(100% - 34px))}.nav{height:70px}.brand{min-width:0}.brand img{width:160px;height:52px}.menu-btn{display:block}.nav-cta{display:none}.nav-links{display:none;position:absolute;left:0;right:0;top:70px;background:#061b17;padding:18px 24px 24px;flex-direction:column;align-items:stretch;gap:0;border-bottom:1px solid #ffffff20}.nav-links.open{display:flex}.nav-links a{padding:13px 0;border-bottom:1px solid #ffffff12}.hero{min-height:660px;align-items:flex-end}.hero-bg{object-position:62% center}.hero:before{background:linear-gradient(0deg,rgba(3,20,16,.97) 0%,rgba(3,20,16,.8) 46%,rgba(3,20,16,.1) 100%)}.hero-content{padding:105px 0 44px}.hero h1{font-size:clamp(2.8rem,12vw,4.4rem)}.hero-copy{font-size:1rem}.hero-note{margin-top:30px}.trust-grid{grid-template-columns:1fr;gap:12px;padding:18px 0}.trust-item{justify-content:flex-start}.trust-icon{width:34px;height:34px}section{padding:72px 0}.intro-grid,.solutions-grid{grid-template-columns:1fr;gap:34px}.intro-photo{height:330px}.photo-note{left:12px;bottom:12px;max-width:225px;padding:17px}.location-grid{gap:12px}.location-card{padding:20px 17px}.location-symbol{margin-bottom:16px}.charger-cards{gap:12px}.charger-img{height:170px}.charger-body{padding:16px}.charger-body h3{font-size:1.16rem}.partner-inner{grid-template-columns:1fr;gap:0}.partner-copy{padding:65px 0 25px}.partner-photo{height:300px;mask-image:linear-gradient(0deg,#000 65%,transparent 100%);grid-row:2}.benefit-list{gap:14px}.steps-grid{grid-template-columns:1fr;gap:10px}.step{padding:22px 0}.step-num{font-size:2rem;margin-bottom:10px}.contact-panel{grid-template-columns:1fr;padding:32px 23px;gap:25px;border-radius:22px}.contact-panel:after{font-size:12rem;right:-5px;bottom:20%}.footer-top{align-items:flex-start;flex-direction:column}.footer-nav{gap:14px}.footer-bottom{align-items:flex-start;flex-direction:column}}
+    @media(max-width:420px){.location-grid{grid-template-columns:1fr 1fr}.location-card{padding:17px 14px}.location-card h3{font-size:1rem}.location-card p{font-size:.82rem}.charger-cards{grid-template-columns:1fr}.charger-img{height:220px}.hero-actions .btn{width:100%}.benefit-list{grid-template-columns:1fr}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Flying Grid home"><img src="assets/flying-grid-logo.jpg" alt="Flying Grid logo"></a>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#locations">Suitable Locations</a><a href="#chargers">Charging Solutions</a><a href="#partner">Partner With Us</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-primary nav-cta" href="#contact">Partner With Us <span class="arrow">↗</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <img class="hero-bg" src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=2200&q=90" alt="Electric vehicle charging at a modern charging station">
+      <div class="container"><div class="hero-content">
+        <div class="eyebrow">EV charging partnership · Ujjain</div>
+        <h1>Your Space.<br><span>Our Charging Network.</span></h1>
+        <p class="hero-copy">Bring EV charging to your location. Partner with Flying Grid to help make convenient, reliable charging accessible to more people and support a cleaner mobility future.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#contact">Explore Partnership <span class="arrow">↗</span></a><a class="btn btn-outline" href="#about">Discover Flying Grid <span class="arrow">↓</span></a></div>
+        <div class="hero-note"><span class="pin">⌖</span> Ujjain, Madhya Pradesh, India</div>
+      </div></div>
+    </section>
+
+    <div class="trust-strip"><div class="container trust-grid">
+      <div class="trust-item"><span class="trust-icon">⌁</span> Supporting electric mobility</div>
+      <div class="trust-item"><span class="trust-icon">⌖</span> Designed for suitable locations</div>
+      <div class="trust-item"><span class="trust-icon">↗</span> Building a connected EV future</div>
+    </div></div>
+
+    <section id="about"><div class="container intro-grid">
+      <div class="intro-copy"><div class="eyebrow">About Flying Grid</div><div class="mini-line"></div><h2>Let's make EV charging part of everyday journeys.</h2><p>Flying Grid is building an EV charging network to make charging more accessible. We work with property owners and businesses interested in hosting charging facilities at suitable locations.</p><p>From understanding your site to discussing the next steps, our aim is to make the partnership process clear and straightforward.</p><a class="btn btn-primary" href="#contact">Talk to Our Team <span class="arrow">↗</span></a></div>
+      <div class="intro-photo-wrap"><img class="intro-photo" src="https://images.unsplash.com/photo-1647651256812-4b3c2a1d6d11?auto=format&fit=crop&w=1200&q=85" alt="Modern electric vehicle charging equipment in a landscaped setting" onerror="this.src='https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=1200&q=85'"><div class="photo-note"><div class="mini-line"></div><strong>Good locations can help move electric mobility forward.</strong><span>Let's explore whether your property is suitable for EV charging.</span></div></div>
+    </div></section>
+
+    <section class="locations" id="locations"><div class="container">
+      <div class="section-head"><div class="eyebrow">Is your location suitable?</div><div class="mini-line"></div><h2>Charging can fit into places people already visit.</h2><p>Have a property with accessible parking or space for two-wheelers? Get in touch with Flying Grid to discuss the suitability of your location.</p></div>
+      <div class="location-grid">
+        <article class="location-card"><div class="location-symbol">⌂</div><h3>Shops & Retail</h3><p>Make charging an option for customers visiting your business.</p></article>
+        <article class="location-card"><div class="location-symbol">✦</div><h3>Hotels & Cafés</h3><p>Explore charging for guests and visitors during their stay.</p></article>
+        <article class="location-card"><div class="location-symbol">▦</div><h3>Parking Areas</h3><p>Consider EV charging at accessible two-wheeler parking locations.</p></article>
+        <article class="location-card"><div class="location-symbol">⌂</div><h3>Commercial Spaces</h3><p>Offices, malls and other suitable properties can enquire.</p></article>
+      </div>
+    </div></section>
+
+    <section id="chargers"><div class="container solutions-grid">
+      <div class="solutions-copy"><div class="eyebrow">Charging solutions</div><div class="mini-line"></div><h2>Charging solutions for electric two-wheelers.</h2><p>Flying Grid is preparing charging options designed around the needs of electric two-wheeler users and suitable host locations.</p><p>Contact us to discuss charger requirements, site conditions and the next steps for your property.</p><a class="btn btn-primary" href="#contact">Enquire About Chargers <span class="arrow">↗</span></a></div>
+      <div class="charger-cards">
+        <article class="charger-card"><img class="charger-img" src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=900&q=85" alt="Electric vehicle charging equipment"><div class="charger-body"><span class="tag">DC charging</span><h3>6 kW DC Charger</h3><p>Dual-gun configuration for electric two-wheelers.</p><div class="spec"><span>✓</span><span><b>Output:</b> 3 kW + 3 kW</span></div><div class="spec"><span>✓</span><span><b>Connectors:</b> Type 6 & Type 7</span></div></div></article>
+        <article class="charger-card"><img class="charger-img" src="https://images.unsplash.com/photo-1621976360623-004d9941e2b5?auto=format&fit=crop&w=900&q=85" alt="Electric vehicle AC charging cable and equipment"><div class="charger-body"><span class="tag">AC charging</span><h3>3.3 kW AC Charger</h3><p>An additional charging option for suitable electric two-wheeler locations.</p><div class="spec"><span>✓</span><span><b>Power:</b> 3.3 kW AC</span></div><div class="spec"><span>✓</span><span><b>Use:</b> Subject to site suitability</span></div></div></article>
+      </div>
+    </div></section>
+
+    <section class="partner" id="partner"><div class="container partner-inner">
+      <div class="partner-copy"><div class="eyebrow">Partner with Flying Grid</div><div class="mini-line"></div><h2>Have a location? Let's explore the possibilities.</h2><p>If you own or manage a shop, hotel, café, parking area or commercial property, your location may be suitable for an EV charging station.</p>
+        <div class="benefit-list"><div class="benefit"><span class="check">✓</span><span>Support cleaner mobility</span></div><div class="benefit"><span class="check">✓</span><span>Help serve EV users</span></div><div class="benefit"><span class="check">✓</span><span>Discuss location suitability</span></div><div class="benefit"><span class="check">✓</span><span>Connect with our team</span></div></div>
+        <a class="btn btn-primary" href="#contact">Discuss Your Location <span class="arrow">↗</span></a></div>
+      <img class="partner-photo" src="https://images.unsplash.com/photo-1592833159157-66b6b7c4f9b2?auto=format&fit=crop&w=1300&q=85" alt="Electric car at a modern charging location" onerror="this.src='https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=1300&q=85'">
+    </div></section>
+
+    <section class="steps"><div class="container"><div class="section-head"><div class="eyebrow">How to get started</div><div class="mini-line"></div><h2>A simple first step.</h2><p>Start a conversation with Flying Grid. We'll learn about your location and discuss what comes next.</p></div>
+      <div class="steps-grid"><article class="step"><div class="step-num">01</div><h3>Contact Flying Grid</h3><p>Share your name, location and the type of property you have.</p></article><article class="step"><div class="step-num">02</div><h3>Discuss Your Site</h3><p>Talk with our team about parking, access and potential charging needs.</p></article><article class="step"><div class="step-num">03</div><h3>Explore Next Steps</h3><p>If the location looks suitable, discuss the next steps with our team.</p></article></div>
+    </div></section>
+
+    <section class="contact" id="contact"><div class="container"><div class="contact-panel"><div><div class="eyebrow">Let's connect</div><div class="mini-line"></div><h2>Interested in hosting an EV charging station?</h2><p>Tell us a little about your property. The Flying Grid team can connect with you to discuss location suitability and partnership possibilities.</p><a class="btn btn-primary" href="mailto:CONTACT_EMAIL_HERE?subject=Flying%20Grid%20Partnership%20Enquiry">Send an Enquiry <span class="arrow">↗</span></a><p class="contact-hint">Before publishing, replace the placeholder email address in this page's contact links.</p></div>
+        <div class="contact-options"><a class="contact-option" href="mailto:CONTACT_EMAIL_HERE?subject=Flying%20Grid%20Partnership%20Enquiry"><span class="contact-icon">✉</span><span><small>Email us</small><strong>CONTACT_EMAIL_HERE</strong></span></a><a class="contact-option" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener"><span class="contact-icon">◉</span><span><small>WhatsApp</small><strong>Chat with Flying Grid</strong></span></a><div class="contact-option"><span class="contact-icon">⌖</span><span><small>Location</small><strong>Ujjain, Madhya Pradesh</strong></span></div></div>
+      </div></div></section>
+  </main>
+
+  <footer><div class="container"><div class="footer-top"><a class="footer-brand" href="#home"><img src="assets/flying-grid-logo.jpg" alt="Flying Grid"></a><nav class="footer-nav" aria-label="Footer navigation"><a href="#about">About</a><a href="#locations">Suitable Locations</a><a href="#chargers">Chargers</a><a href="#partner">Partner With Us</a><a href="#contact">Contact</a></nav></div><div class="footer-bottom"><p>© <span id="year"></span> Flying Grid. All rights reserved.</p><p>Powering a cleaner, greener tomorrow.</p></div></div></footer>
+  <script>
+    const menuBtn=document.getElementById('menuBtn');const navLinks=document.getElementById('navLinks');
+    menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'✕':'☰'});
+    navLinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰'}));
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
